@@ -2,13 +2,13 @@
 
 - Iniciando Job
 - Criação de Site para Equipe Arte no Piso
--Logo
--MENU
+- Logo
+- MENU
+
   - Inicio
-  _ Sobre
+  - Sobre
   - Portfolio
   - Contato
-  
-  
-# Desenvolver me Wordpress para CMS
 
+
+# Desenvolver me Wordpress para CMS
