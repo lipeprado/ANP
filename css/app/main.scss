@@ -1,1 +1,180 @@
 @import "variaveis";
+
+
+body{
+			font-family: $queen;
+			color: $base;
+			background-image: url(../img/bg-main.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+
+}
+
+
+header{
+	z-index: 10;
+	background-color: $dark;
+	width: 100%;
+	margin: 0;
+	padding: 2rem;
+	position: relative;
+
+	.logo{
+		float: left;
+		width: 150px;
+
+		img{
+			width: 100%;
+			/*padding: 2rem;*/
+		}
+	}
+
+	.menu-main{
+		position: relative;
+		display: block;		
+		margin: 0;
+		padding: 1rem 0;
+		ul{
+			float: right;
+			display: block;
+			li{
+				list-style-type: none;
+				display: inline-block;
+				margin-left: .5rem;
+				padding: 0;
+				a{
+					color: $base;
+					font-family: $queen;
+					font-weight: 300;
+					font-size: 1.4rem;
+					letter-spacing: 2px;
+					padding: .4rem 1rem;
+					margin: 0;
+					text-decoration: none;
+					&:hover{
+						color:$detalhes;
+					}
+				}
+
+				a.btn-contrate{
+					background-color: transparent;
+	color: $base;
+	border: 1px solid $detalhes;
+	transition: all .3s ease-in-out;
+	&:hover{
+	background-color: $detalhes;
+	border: 1px solid $detalhes;
+	color:$base;}
+				}
+				
+			}
+		}
+	}
+}
+
+
+#banner-main{
+	position: relative;
+	top: 20%;
+	width: 100%;
+	padding:8rem;
+	margin-bottom: 4rem;
+
+}
+
+.banner-main{
+	width: 100%;
+	margin: 4rem auto;
+	text-align: center;
+	h1{
+		color: $base;
+		font-family: $prince;
+		font-weight: bold;
+		font-size: 80px;
+		line-height: 1.25;
+
+	}
+	a.btn-main{
+		 margin-top: 3rem;
+		text-decoration: none;
+		background-color: $detalhes;
+		color: $base;
+		&:hover{
+			background-color: darken($detalhes, 5%);
+	}
+}}
+
+#recentes{
+	position: relative;
+	width: 100%;
+	padding:8rem 0;
+	color: $base;
+	.titulo{
+		width: 160px;
+		margin: 3rem 0;
+		text-align: left;
+	h2{
+		font-size: 2rem;
+		font-family: $queen;
+		color: $base;
+		padding-bottom: 1.6rem;
+		border-bottom: 1px solid $detalhes;
+	}
+		}
+
+		.recentes-inner{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border: 3px solid $base;
+			min-height: 350px;
+			img{
+				width: 100%;
+				max-height: 350px;
+				min-height: 350px;
+			}
+		}
+
+		.wrap-inner{
+			cursor: pointer;
+			position: absolute;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			top: 0;
+			text-align: center;
+			background-color: $detalhes;
+			color: $base;
+			width: 93%;
+			height: 100%;
+			overflow: hidden;
+			transform: translateZ(100%);
+			opacity: 0;
+			transition: all .3s ease-in-out;
+			h4{
+			font-size: 3rem;
+			font-family: $queen;
+			text-transform: uppercase;
+			}
+			.social{
+				display: inline-block;
+				i{
+					font-size: 3rem;
+					margin:10px;
+				}
+			}
+		}
+		.recente-box:hover .wrap-inner{
+		transform: translateZ(0);
+		opacity: 1;
+	}
+
+	.recente-box{
+		margin-bottom: 20px;
+	}
+	}
+
+
+	
