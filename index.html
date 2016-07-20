@@ -21,22 +21,26 @@
   
 
   <!-- MODERNIZR -->
-  <!-- <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> 
+
+
 </head>
 
 
-<body>
+<body id="target">
+
+
 <div class="wrap-main">
 
   <header  class="cf">
   <div class="container-large ">
-    <div class="logo"><a href="#"><img src="img/logo_png.png" alt="Logo Arte no Piso"></a></div>
+    <div class="logo"><a href=""><img src="img/logo_png.png" alt="Logo Arte no Piso"></a></div>
         <div class="navigation">
           
-            <a href="#">Inicio</a>
+            <a href="#inicio">Inicio</a>
             <a href="#sobre">Sobre</a>
             <a href="#portfolio">Portfólio</a>
-            <a class="contrate" href="#">Contrate</a>
+            <a class="contrate" href="#footer">Contrate</a>
          
         </div>
     </div>
@@ -46,17 +50,17 @@
       <div class="container-skinner">
           <h1>Personalizamos seu Piso!</h1>
             <p>De fato, fazemos Arte no chão.</p>
-            <a href="#" class="btn-main">Contrate Agora</a>
+            <a href="#footer" class="btn-main">Contrate Agora</a>
       </div>
 
-    <div class="dividor"><a href="#">
+    <div class="dividor"><a href="#portfolio">
     <svg class="svg-anime" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 461.152 461.152" xml:space="preserve" width="40px" height="40px"><g>
   <polygon points="343.238,333.821 237.5,439.573 237.494,0 223.665,0 223.672,439.573 117.914,333.821 108.137,343.598    225.698,461.152 235.475,461.152 353.015,343.598  " fill="#ea6c6b"/></svg></a>
  </div>
   </section>
 
 
-<section id="portfolio" class="cf">
+<section id="portfolio"  class="cf scrol">
 <div class="container-medium">
    
     <h2>Últimos Trabalhos</h2>
@@ -112,6 +116,19 @@
   <div class="col-xs-12 col-sm-6 col-md-4">
     <div class="post">
 
+      <img src="img/arte1.jpg" alt="Girasois">
+       <div class="inner">
+      <h3>Pisos Girasois</h3>
+      <div class="post-info">Piso Personalizados e Exclusivos 
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="post">
+
       <img src="img/arte2.jpg" alt="Girasois">
        <div class="inner">
       <h3>Pisos Pedras</h3>
@@ -138,6 +155,19 @@
   <div class="col-xs-12 col-sm-6 col-md-4">
     <div class="post">
 
+      <img src="img/arte1.jpg" alt="Girasois">
+       <div class="inner">
+      <h3>Pisos Girasois</h3>
+      <div class="post-info">Piso Personalizados e Exclusivos 
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="post">
+
       <img src="img/arte4.jpg" alt="Girasois">
        <div class="inner">
       <h3>Pisos Granito</h3>
@@ -147,6 +177,20 @@
 
     </div>
   </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="post">
+
+      <img src="img/arte1.jpg" alt="Girasois">
+       <div class="inner">
+      <h3>Pisos Girasois</h3>
+      <div class="post-info">Piso Personalizados e Exclusivos 
+      </div>
+      </div>
+
+    </div>
+  </div>
+
 
   </div> <!-- FINAL ROW -->
   <br>
@@ -161,57 +205,80 @@
 
 
 
-<section id="sobre">
+<section id="sobre" class='cover'>
 <div class="container-medium">
   <div class="inner-sobre">
   <h3>Quem somos</h3>
 
   <p>
-Podemos dizer que somos uma equipe de artista instalando pisos. Em nosso time contamos com um pintor premiado em alguns festivais de arte no Sul do Brasil. Temos também um estrangeiro com uma habilidade manuel incrível. Juntando isso com o conhecimento adquirido sobre Porcelanato Líquido no exterior, podemos dizer que somos únicos aqui no Brasil. <br>
-Muito Prazer, Nós somos a <span>Arte no Piso</span>.</p>
+Podemos dizer que somos uma equipe de artista instalando pisos. Em nosso time contamos com um pintor premiado em alguns festivais de arte no Sul do Brasil. Temos também um estrangeiro com uma habilidade manuel incrível. Juntando isso com o conhecimento adquirido sobre Porcelanato Líquido no exterior, podemos dizer que somos únicos aqui no Brasil. Muito Prazer, Nós somos a <span>Arte no Piso</span>.</p>
 </div>
 
 </div>
 </section>
 
 
-<footer id="footer">
+<footer id="footer" class="cf">
   
 <div class="container-large">
 <div class="col-xs-12 col-md-6">
 <div class="wrap-main-footer">
-<div class="logo-footer"><a href="#"><img src="img/logo_png.png" alt="Logo Arte no Piso"></a></div>
+<div  class="logo-footer scrollToTop"><a href="#"><img src="img/logo_png.png" alt="Logo Arte no Piso"></a></div>
 
 <ul>
-  <li><a href="">contato@artenopiso.com.br</a></li>
-  <li><a href="">(021) 96538-7000 <span>Whatsapp</span> </a></li>
-  <li><a href="">(021) 3333-3333</a></li>
+  <li><a class="dados" href="">contato@artenopiso.com.br</a></li>
+  <li><a class="dados" href="">(021) 96538-7000 <span>Whatsapp</span> </a></li>
+  <li><a class="dados" href="">(021) 3333-3333</a></li>
 </ul>
   </div>
+
+
+  <div class="wrap-sec-footer">
+      <p>Redes Sociais</p>
+    <a class="social" href="http://www.facebook.com" target="_blank"><svg  version="1.1"  x="0px" y="0px" width="50px" height="50px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">    <path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845    v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z    " />
+  
+</svg></a>
+
+
+
+
+
+<a class="social"href="http://www.instagram.com" target="_blank"><svg  version="1.1"  x="0px" y="0px" width="50px" height="50px" viewBox="0 0 49.652 49.652" style="enable-
+<background:new 0 0 49.652 49.652;" xml:space="preserve">
+
+      <path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z" />
+      <polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762    " />
+      <path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z" />
+      <path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z" />
+  
+</svg></a>
+
   </div>
+  </div>
+
+  
+
+
 
   <div class="col-xs-12 col-md-6">
   <div class="wrap-form">
+  <h3> Entre em contato:</h3>
     <form action="">
-      <input type="text" placeholder="Nome">
-      <input type="email" placeholder="Email">
-      <textarea name="" id="msg" placeholder="Mensagem"></textarea>
-      <button type="submit">Enviar</button>
+      <input class="input" type="text" placeholder="Nome">
+      <input class="input" type="email" placeholder="Email"> <br>
+      <textarea name="" id="msg" rows="5" placeholder="Mensagem"></textarea><br>
+      <button class="btn-footer" type="submit">Enviar</button>
     </form>
 
   </div>
   </div>
-
+  <div class="dev">
+<p>Criado por <a href="http://www.behance.com/lipe-web" target="_blank">LipeWeb</a></p>
+</div>
 </div> <!-- CONTAINER -->
+
+
 </footer>
-
-
-
-
-
-
-
-
 
 
 

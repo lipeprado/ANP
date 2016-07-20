@@ -5,6 +5,7 @@
 html, body{
 	box-sizing: border-box;
 	font-family: $queen;
+	overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -16,10 +17,10 @@ h1, h2, h3, h4, h5, h6{
 }
 .wrap-main{
 	width: 100%;
-	background-image: url(../img/bg-main.jpg);
+	background-image: url(../img/bg-teste.jpg);
 	background-attachment: fixed;
 	background-size: cover;
-	padding-bottom: 150px;
+	padding-bottom: 10px;
 	height: auto;
 
 }
@@ -64,9 +65,11 @@ header{
 
 #main{
 	width: 100%;
-	background-color: rgba($dark, .4);
+	height: auto;
+	background-color:trasparent;
 	text-align: center;
-	padding:8rem 0;
+	padding:5rem 0;
+	
 	
 	h1{
 		font-size: 70px;
@@ -99,7 +102,11 @@ header{
 
 
 #portfolio{
+	height: 1200px;
+	background-color:trasparent;
 	width: 100%;
+	margin-top: 5px;
+	padding-top: 1rem;
 		h2{
 		font-family: $king;
 		font-size: 1.6rem;
@@ -187,8 +194,10 @@ header{
 	}
 
 	#sobre{
+		height: 350px;
+		background-color:trasparent;
 		width: 100%;
-		margin: 30px 0 50px 0;
+		margin: 1rem;
 		.inner-sobre{
 			padding: 3rem 0;
 			h3{
@@ -200,10 +209,11 @@ header{
 			}
 			p{
 				font-family: $queen;
-			font-size: 1.2rem;
-			color: $base;
-			font-weight: 300;
-			line-height: 1.75;
+				font-size: 1.4rem;
+			  line-height: 1.7;
+			  text-align: left;
+			  color: $base;
+				font-weight: 300;
 			&::-moz-selection{
 				background-color: $detalhes;
 			}
@@ -223,4 +233,166 @@ header{
 			
 	}
 
-@import 'response';
+#footer{
+	height: 550px;
+
+	background-color:trasparent;
+	width: 100%;
+	background: url("../img/topo_bg.png") repeat scroll 0% 0% / 65% auto;
+	background-color: rgba($dark, .8);
+	padding: 5rem 0 1rem 0;
+
+	.wrap-main-footer{
+		width: 100%;
+			
+		padding:0 0 1rem 0 ;
+		ul{
+			float: left;
+			display: block;
+			margin: 0;
+			padding:3rem ;
+			li{
+				margin: 0;
+				padding: 0;
+				display: block;
+				list-style-type: none;
+				margin-bottom: 10px;
+				a{
+					margin: 0;
+					padding: 0;
+					text-decoration: none;
+					color: $base;
+					font-size: 1.2rem;
+				  line-height: 1.5;	
+				  font-weight: 300;
+				  font-family: $queen;
+				  padding-left: 10px; 
+				  border-left: 1px solid $detalhes; 
+				  span{
+				  	font-weight: 700;
+				  	font-size: .6rem;
+				  	color:$detalhes;
+				  }
+				}
+			}				
+		}
+	}
+
+	.wrap-sec-footer{
+		float: right;
+		padding:0 3rem 3rem 0 ;
+		p{
+			font-family: $queen;
+				font-size: 1.4rem;
+			  line-height: 1.7;
+			  text-align: left;
+			  color: $base;
+				font-weight: 300;
+		}
+		.social{
+			margin-right: 10px;
+			svg{
+				fill:$base;
+				transition: all .3s ease-in-out;
+				&:hover{
+				fill: $detalhes;
+				}
+			}
+		}
+	}
+	.wrap-form{
+		padding:0 0 1rem 0 ;
+		width: 100%;
+		h3{
+			font-family: $king;
+				font-size: 1.6rem;
+				font-weight: 300;
+				color: $detalhes;
+				margin: 0 0 1rem 0;
+		}
+		form{
+			width: 100%;
+			textarea{
+				width: 100%;
+				margin-bottom: .5rem;
+				padding-left: .5rem;
+				font-size: .9rem;
+				line-height: 1.4;
+				border: none;
+				background-color: transparent;
+				color: $detalhes;
+				border: 1px solid  $detalhes;
+				transition: all .1s ease;
+				
+			}
+			textarea:focus,
+			textarea:active{
+				outline: 1px solid  $detalhes;
+			}
+			.btn-footer{
+					width: 100%;
+
+					height: 50px;
+					text-decoration: none;
+					padding: .9rem 1.4rem;
+					background-color: $detalhes;
+					color: $base;
+					display: inline-block;
+					transition: all .1s ease;
+					border: none;
+					&:hover{
+						background-color: darken($detalhes, 10%);
+					}
+				}
+			
+			input{
+				width: 100%;
+				height: 50px;
+				margin-bottom: .5rem;
+				border: none;
+				padding-left: .5rem;
+				font-size: .9rem;
+				background-color: transparent;
+				color: $detalhes;
+				border: 1px solid  $detalhes;
+				transition: all .1s ease-in-out;
+			}
+			input:focus,
+			input:active{
+				outline: 1px solid  $detalhes;
+				padding-right: .5rem;
+				font-size: .9rem;
+				
+}
+		}
+	}
+	.dev{
+		width: 300px;
+		p{
+	padding: 1rem;
+	font-family: $queen;
+	color: $base;
+	font-size: .7rem;
+	a{
+		text-decoration: none;
+		color: $detalhes;
+		font-weight: 700;
+		font-family: $king;
+	}
+}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'response'; 

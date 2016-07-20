@@ -67,7 +67,8 @@
 
 html, body {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Bitter", serif;
@@ -77,10 +78,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrap-main {
   width: 100%;
-  background-image: url(../img/bg-main.jpg);
+  background-image: url(../img/bg-teste.jpg);
   background-attachment: fixed;
   background-size: cover;
-  padding-bottom: 150px;
+  padding-bottom: 10px;
   height: auto; }
 
 header {
@@ -117,9 +118,10 @@ header {
 
 #main {
   width: 100%;
-  background-color: rgba(40, 40, 40, 0.4);
+  height: auto;
+  background-color: trasparent;
   text-align: center;
-  padding: 8rem 0; }
+  padding: 5rem 0; }
   #main h1 {
     font-size: 70px;
     font-weight: 700;
@@ -146,7 +148,11 @@ header {
     /* IE 10+, Fx 29+ */ }
 
 #portfolio {
-  width: 100%; }
+  height: 1200px;
+  background-color: trasparent;
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 1rem; }
   #portfolio h2 {
     font-family: "Bitter", serif;
     font-size: 1.6rem;
@@ -226,8 +232,10 @@ header {
     transition: all .9s ease; }
 
 #sobre {
+  height: 350px;
+  background-color: trasparent;
   width: 100%;
-  margin: 30px 0 50px 0; }
+  margin: 1rem; }
   #sobre .inner-sobre {
     padding: 3rem 0; }
     #sobre .inner-sobre h3 {
@@ -238,10 +246,11 @@ header {
       margin: 0 0 2rem 0; }
     #sobre .inner-sobre p {
       font-family: "Open Sans", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      line-height: 1.7;
+      text-align: left;
       color: #fff;
-      font-weight: 300;
-      line-height: 1.75; }
+      font-weight: 300; }
       #sobre .inner-sobre p::-moz-selection {
         background-color: #ea6c6b; }
       #sobre .inner-sobre p span {
@@ -250,6 +259,125 @@ header {
         background-color: #ea6c6b; }
     #sobre .inner-sobre p::selection {
       background-color: #ea6c6b; }
+
+#footer {
+  height: 550px;
+  background-color: trasparent;
+  width: 100%;
+  background: url("../img/topo_bg.png") repeat scroll 0% 0%/65% auto;
+  background-color: rgba(40, 40, 40, 0.8);
+  padding: 5rem 0 1rem 0; }
+  #footer .wrap-main-footer {
+    width: 100%;
+    padding: 0 0 1rem 0; }
+    #footer .wrap-main-footer ul {
+      float: left;
+      display: block;
+      margin: 0;
+      padding: 3rem; }
+      #footer .wrap-main-footer ul li {
+        margin: 0;
+        padding: 0;
+        display: block;
+        list-style-type: none;
+        margin-bottom: 10px; }
+        #footer .wrap-main-footer ul li a {
+          margin: 0;
+          padding: 0;
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.2rem;
+          line-height: 1.5;
+          font-weight: 300;
+          font-family: "Open Sans", sans-serif;
+          padding-left: 10px;
+          border-left: 1px solid #ea6c6b; }
+          #footer .wrap-main-footer ul li a span {
+            font-weight: 700;
+            font-size: .6rem;
+            color: #ea6c6b; }
+  #footer .wrap-sec-footer {
+    float: right;
+    padding: 0 3rem 3rem 0; }
+    #footer .wrap-sec-footer p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      line-height: 1.7;
+      text-align: left;
+      color: #fff;
+      font-weight: 300; }
+    #footer .wrap-sec-footer .social {
+      margin-right: 10px; }
+      #footer .wrap-sec-footer .social svg {
+        fill: #fff;
+        transition: all .3s ease-in-out; }
+        #footer .wrap-sec-footer .social svg:hover {
+          fill: #ea6c6b; }
+  #footer .wrap-form {
+    padding: 0 0 1rem 0;
+    width: 100%; }
+    #footer .wrap-form h3 {
+      font-family: "Bitter", serif;
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: #ea6c6b;
+      margin: 0 0 1rem 0; }
+    #footer .wrap-form form {
+      width: 100%; }
+      #footer .wrap-form form textarea {
+        width: 100%;
+        margin-bottom: .5rem;
+        padding-left: .5rem;
+        font-size: .9rem;
+        line-height: 1.4;
+        border: none;
+        background-color: transparent;
+        color: #ea6c6b;
+        border: 1px solid #ea6c6b;
+        transition: all .1s ease; }
+      #footer .wrap-form form textarea:focus,
+      #footer .wrap-form form textarea:active {
+        outline: 1px solid #ea6c6b; }
+      #footer .wrap-form form .btn-footer {
+        width: 100%;
+        height: 50px;
+        text-decoration: none;
+        padding: .9rem 1.4rem;
+        background-color: #ea6c6b;
+        color: #fff;
+        display: inline-block;
+        transition: all .1s ease;
+        border: none; }
+        #footer .wrap-form form .btn-footer:hover {
+          background-color: #e4403e; }
+      #footer .wrap-form form input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: .5rem;
+        border: none;
+        padding-left: .5rem;
+        font-size: .9rem;
+        background-color: transparent;
+        color: #ea6c6b;
+        border: 1px solid #ea6c6b;
+        transition: all .1s ease-in-out; }
+      #footer .wrap-form form input:focus,
+      #footer .wrap-form form input:active {
+        outline: 1px solid #ea6c6b;
+        padding-right: .5rem;
+        font-size: .9rem; }
+  #footer .dev {
+    width: 300px; }
+    #footer .dev p {
+      padding: 1rem;
+      font-family: "Open Sans", sans-serif;
+      color: #fff;
+      font-size: .7rem; }
+      #footer .dev p a {
+        text-decoration: none;
+        color: #ea6c6b;
+        font-weight: 700;
+        font-family: "Bitter", serif; }
 
 @media screen and (min-width: 1200px) {
   .inner h3 {
