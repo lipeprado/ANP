@@ -4,5 +4,90 @@ $detalhes: #ea6c6b;
 $dark: #282828;
 
 
-$prince: 'Noticia Text', serif;
-$queen: 'Roboto Condensed', sans-serif;
+$king: 'Bitter', serif;
+$queen: 'Open Sans', sans-serif;
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.container-skinner{
+	max-width: 75%;
+	margin: 0 auto;
+}
+
+
+.container-medium{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.container-large{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.btn-main{
+	text-decoration: none;
+	padding: .7rem 1.4rem;
+	background-color: $detalhes;
+	color: $base;
+	display: inline-block;
+	border-radius: 2rem;
+	transition: all .3s ease-in-out;
+	-webkit-box-shadow: 0px 2px 7px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 7px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 7px -4px rgba(0,0,0,0.75);
+	&:hover{
+		background-color: darken($detalhes, 10%);
+	}
+}
+
+
+
+@-webkit-keyframes anime {
+  from {
+  	transform: translateY(0);
+  }
+  to {
+  	transform: translateY(20px);
+  }
+}
+@-moz-keyframes anime {
+  from {
+  	transform: translateY(0);
+  }
+  to {
+  	transform: translateY(20px);
+  }
+}
+@-o-keyframes anime {
+  from {
+  	transform: translateY(0);
+  }
+  to {
+  	transform: translateY(20px);
+  }
+}
+@keyframes anime {
+  from {
+  	transform: translateY(0);
+  }
+  to {
+  	transform: translateY(20px);
+  }
+}
