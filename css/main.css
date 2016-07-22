@@ -118,7 +118,6 @@ header {
 
 #main {
   width: 100%;
-  height: auto;
   background-color: trasparent;
   text-align: center;
   padding: 5rem 0; }
@@ -148,7 +147,6 @@ header {
     /* IE 10+, Fx 29+ */ }
 
 #portfolio {
-  height: 1200px;
   background-color: trasparent;
   width: 100%;
   margin-top: 5px;
@@ -232,7 +230,6 @@ header {
     transition: all .9s ease; }
 
 #sobre {
-  height: 350px;
   background-color: trasparent;
   width: 100%;
   margin: 1rem; }
@@ -261,7 +258,6 @@ header {
       background-color: #ea6c6b; }
 
 #footer {
-  height: 550px;
   background-color: trasparent;
   width: 100%;
   background: url("../img/topo_bg.png") repeat scroll 0% 0%/65% auto;
@@ -379,6 +375,11 @@ header {
         font-weight: 700;
         font-family: "Bitter", serif; }
 
-@media screen and (min-width: 1200px) {
-  .inner h3 {
-    font-size: 2.5rem; } }
+
+
+
+
+
+
+
+

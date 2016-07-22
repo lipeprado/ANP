@@ -1,4 +1,95 @@
-// MEDIA QUERY MIN 1200 PX
+@media screen and (max-width: 500px) {
+ .logo{
+ 	float: none;
+ 	text-align: center;
+ }
+
+ .navigation {
+ 	text-align: center;
+    float: none;
+    display: block;
+    padding-top: .8rem;}
+
+}
+
+.navigation a {
+	display: block;
+    }
+.navigation a.contrate {
+	border: none;
+
+    border-bottom: 1px solid #ea6c6b;
+    color: #ea6c6b;
+    border-radius: 0;}
+
+    .navigation a.contrate:hover{
+    	border: none;
+    	border-bottom: 1px solid $base;
+    }
+
+
+    #main h1 {
+    font-size: 2rem;
+   }
+
+   #main p{
+   	font-size: 1.1rem;
+		margin: .4rem 0 1rem 0;
+   }
+
+
+   #main .dividor {
+    margin: 30px auto 0 auto;
+}
+
+#sobre {
+    
+    margin: 1rem 0;
+}
+
+
+#sobre .inner-sobre p {
+    
+    font-size: 1.2rem;
+    line-height: 1.5;
+    
+}
+
+#footer {
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+#footer .wrap-main-footer{
+	text-align: center;
+}
+
+#footer .wrap-main-footer ul {
+	text-align: left;
+    float: none;
+    display: block;
+    margin: 0;
+    padding: 1.5rem 0;}
+
+#footer .wrap-sec-footer {
+    float: none;
+    padding:.5rem 0 2rem 0;
+}
+#footer .wrap-sec-footer p {
+    margin: .5rem 0;
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*// MEDIA QUERY MIN 1200 PX*/
 
 @media screen and (min-width: 1200px) {
   .inner{
